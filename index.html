@@ -1,11 +1,180 @@
 <!DOCTYPE html>
-<html lang="es">
+<!--
+  index.html = el ESQUELETO de la página (qué contenido hay y en qué orden).
+  El aspecto (colores, tamaños, espacios) vive en css/styles.css.
+  Lo marcado con "TODO" son borradores que Ana tiene que completar.
+-->
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Ana Bertolino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ana Bertolino — Electronic Engineer</title>
+    <meta name="description" content="Portfolio of Ana Bertolino, electronic engineer (FIUBA) with a background in signal processing and machine learning, focused on process automation, IT operations and project management.">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Hola, soy Ana</h1>
-    <p>Ingeniera electrónica. Próximamente, mi portfolio.</p>
+    <!-- Enlace "saltar al contenido": ayuda a quien navega con teclado o lector de pantalla -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">Ana Bertolino</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="container">
+          <p class="eyebrow">Electronic engineer · FIUBA</p>
+          <h1 id="hero-title">Hi, I'm <span class="highlight">Ana Bertolino</span>.</h1>
+          <!-- TODO: Ana to review this positioning line (draft) -->
+          <p class="lead placeholder">
+            I'm an electronic engineer looking for hands-on experience. I offer my work to automate
+            processes, control inventory and support projects that matter to your team.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#projects">See my projects</a>
+            <a class="button button-outline" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-intro">A selection of things I've worked on.</p>
+
+          <div class="card-grid">
+            <!--
+              CÓMO AGREGAR UN PROYECTO: copiá un bloque <article class="card"> ... </article>
+              completo, pegalo debajo del último y cambiá los textos.
+            -->
+
+            <article class="card">
+              <h3>Technical Troubleshooting Agent <span class="card-note">(low-code)</span></h3>
+              <!-- TODO: Ana to complete -->
+              <p class="placeholder">Draft description: a short summary of what this project is and what problem it addresses.</p>
+              <ul class="tags" aria-label="Role and tools">
+                <li>Role: TODO</li>
+                <li>Tools: TODO</li>
+              </ul>
+              <a class="card-link" href="#projects">Details <span aria-hidden="true">→</span><span class="visually-hidden"> about Technical Troubleshooting Agent</span></a>
+            </article>
+
+            <article class="card">
+              <h3>Support Documentation Agent <span class="card-note">(low-code)</span></h3>
+              <!-- TODO: Ana to complete -->
+              <p class="placeholder">Draft description: a short summary of what this project is and what problem it addresses.</p>
+              <ul class="tags" aria-label="Role and tools">
+                <li>Role: TODO</li>
+                <li>Tools: TODO</li>
+              </ul>
+              <a class="card-link" href="#projects">Details <span aria-hidden="true">→</span><span class="visually-hidden"> about Support Documentation Agent</span></a>
+            </article>
+
+            <article class="card">
+              <h3>New PC Inventory — Project Management</h3>
+              <!-- TODO: Ana to complete -->
+              <p class="placeholder">Draft description: a short summary of the scope of the project and how it was organized.</p>
+              <ul class="tags" aria-label="Role and tools">
+                <li>Role: TODO</li>
+                <li>Tools: TODO</li>
+              </ul>
+              <a class="card-link" href="#projects">Details <span aria-hidden="true">→</span><span class="visually-hidden"> about New PC Inventory</span></a>
+            </article>
+
+            <article class="card card-featured">
+              <h3>Contactless vital sign monitoring with UWB radar</h3>
+              <!-- Proyecto de tesis. Texto basado solo en lo que Ana contó; TODO: Ana to refine -->
+              <p class="placeholder">My thesis research: processing ultra-wideband (UWB) radar signals, using Kalman filters and machine learning to estimate vital signs without contact.</p>
+              <ul class="tags" aria-label="Topics">
+                <li>UWB radar</li>
+                <li>Signal processing</li>
+                <li>Kalman filters</li>
+                <li>Machine learning</li>
+              </ul>
+              <a class="card-link" href="#projects">Details <span aria-hidden="true">→</span><span class="visually-hidden"> about the UWB radar thesis</span></a>
+            </article>
+
+            <article class="card">
+              <h3>Stakeholder for an AI End-User Support Agent</h3>
+              <!-- TODO: Ana to complete -->
+              <p class="placeholder">Draft description: a short summary of my role as stakeholder and what I contributed.</p>
+              <ul class="tags" aria-label="Role and tools">
+                <li>Role: TODO</li>
+                <li>Tools: TODO</li>
+              </ul>
+              <a class="card-link" href="#projects">Details <span aria-hidden="true">→</span><span class="visually-hidden"> about the AI End-User Support Agent</span></a>
+            </article>
+
+            <article class="card">
+              <h3>Automated Hardware Alerts for Meeting Rooms</h3>
+              <!-- TODO: Ana to complete -->
+              <p class="placeholder">Draft description: a short summary of what gets monitored and how alerts are delivered.</p>
+              <ul class="tags" aria-label="Role and tools">
+                <li>Role: TODO</li>
+                <li>Tools: TODO</li>
+              </ul>
+              <a class="card-link" href="#projects">Details <span aria-hidden="true">→</span><span class="visually-hidden"> about Automated Hardware Alerts</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ME ============ -->
+      <section class="section section-alt" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <!--
+            FOTO: guardá tu foto como assets/profile.jpg y reemplazá el div de abajo por:
+            <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Ana Bertolino" width="320" height="320">
+          -->
+          <div class="photo-placeholder" role="img" aria-label="Photo of Ana coming soon">
+            <span>Photo<br>coming soon</span>
+          </div>
+
+          <div>
+            <h2 id="about-title">About me</h2>
+            <!-- TODO: Ana to rewrite in her own words (draft) -->
+            <p class="placeholder">I'm an electronic engineer from FIUBA. My background is in signal processing, Kalman filters and machine learning.</p>
+            <p class="placeholder">I'm interested in automation, IT operations and project management, and I enjoy turning messy manual processes into simple, reliable ones.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Contact</h2>
+          <p class="section-intro">The best way to reach me is by email.</p>
+          <p>
+            <a class="button" href="mailto:anabertolinoagostini@gmail.com">anabertolinoagostini@gmail.com</a>
+          </p>
+
+          <!-- TODO: Ana to complete. Cuando tengas los enlaces, sacá las marcas de comentario y poné tu URL real.
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/in/TU-USUARIO">LinkedIn</a></li>
+            <li><a href="https://github.com/TU-USUARIO">GitHub</a></li>
+          </ul>
+          -->
+
+          <!-- VERSIÓN 2: acá iría el formulario de contacto y, en el header, el selector de idioma. -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Ana Bertolino</p>
+      </div>
+    </footer>
   </body>
 </html>
